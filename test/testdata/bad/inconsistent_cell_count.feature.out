@@ -1,0 +1,2 @@
+{"data":"(14:5): inconsistent cell count within the table","media":{"encoding":"utf-8","type":"text/vnd.cucumber.stacktrace+plain"},"source":{"start":{"line":14,"column":5},"uri":"Feature: Inconsistent cell counts\n\n  Scenario: minimalistic\n    Given a data table with inconsistent cell count\n      | foo | bar |\n      | boz | \n\n\n  Scenario Outline: minimalistic\n    Given the <what>\n\n  Examples: \n    | what       |\n    | minimalism | extra |\n"},"type":"attachment"}
+

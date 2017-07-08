@@ -1,0 +1,2 @@
+{"data":"(7:5): expected: #EOF, #TableRow, #DocStringSeparator, #StepLine, #TagLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got 'Så they should be recognized'","media":{"encoding":"utf-8","type":"text/vnd.cucumber.stacktrace+plain"},"source":{"start":{"line":7,"column":5},"uri":"#language:no\nEgenskap: i18n support\n\n  Scenario: Parsing many languages\n    Gitt Gherkin supports many languages\n    Når Norwegian keywords are parsed\n    Så they should be recognized\n"},"type":"attachment"}
+

@@ -1,0 +1,2 @@
+{"type":"pickle","uri":"test/testdata/good/example_token_multiple.feature","pickle":{"language" : "en","name" : "Token used twice in a single step","locations":[{"line":8,"column":7},{"line":3,"column":3}],"tags":[],"steps":[{"locations":[{"line":8,"column":7},{"line":4,"column":11}],"arguments" : [],"text":"usage usage"}]}}
+

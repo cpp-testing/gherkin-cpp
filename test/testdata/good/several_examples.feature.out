@@ -1,0 +1,4 @@
+{"type":"pickle","uri":"test/testdata/good/several_examples.feature","pickle":{"language" : "en","name" : "minimalistic","locations":[{"line":9,"column":7},{"line":3,"column":3}],"tags":[{"location":{"line":6,"column":5},"name":"@foo"}],"steps":[{"locations":[{"line":9,"column":7},{"line":4,"column":11}],"arguments" : [],"text":"the foo"}]}}
+
+{"type":"pickle","uri":"test/testdata/good/several_examples.feature","pickle":{"language" : "en","name" : "minimalistic","locations":[{"line":14,"column":7},{"line":3,"column":3}],"tags":[{"location":{"line":11,"column":5},"name":"@bar"}],"steps":[{"locations":[{"line":14,"column":7},{"line":4,"column":11}],"arguments" : [],"text":"the bar"}]}}
+

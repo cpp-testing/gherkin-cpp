@@ -1,0 +1,2 @@
+{"type":"pickle","uri":"test/testdata/good/minimal.feature","pickle":{"language" : "en","name" : "minimalistic","locations":[{"line":3,"column":3}],"tags":[],"steps":[{"locations":[{"line":4,"column":11}],"arguments" : [],"text":"the minimalism"}]}}
+

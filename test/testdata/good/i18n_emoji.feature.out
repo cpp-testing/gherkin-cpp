@@ -1,0 +1,2 @@
+{"data":"(6:0): unexpected end of file, expected: #TagLine, #FeatureLine, #Comment, #Empty","media":{"encoding":"utf-8","type":"text/vnd.cucumber.stacktrace+plain"},"source":{"start":{"line":6,"column":0},"uri":"# language: em\n📚: 🙈🙉🙊\n\n  📕: 💃\n    😐🎸\n"},"type":"attachment"}
+

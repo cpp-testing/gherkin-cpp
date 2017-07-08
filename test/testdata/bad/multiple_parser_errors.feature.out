@@ -1,0 +1,2 @@
+{"data":"(9:1): expected: #EOF, #TableRow, #DocStringSeparator, #StepLine, #TagLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got 'another invalid line here'","media":{"encoding":"utf-8","type":"text/vnd.cucumber.stacktrace+plain"},"source":{"start":{"line":9,"column":1},"uri":"\ninvalid line here\n\nFeature: Multiple parser errors\n\n  Scenario: minimalistic\n    Given the minimalism\n\nanother invalid line here\n"},"type":"attachment"}
+
