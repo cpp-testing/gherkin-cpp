@@ -1,2 +1,6 @@
+{"type":"gherkin-document","uri":"test/testdata/good/scenario_outline_no_newline.feature","document":{"type":"GherkinDocument","feature":{"type":"Feature","tags":[],"location":{"line":1,"column":1},"language":"en","keyword":"Feature","name":"Minimal Scenario Outline","children":[{"type":"ScenarioOutline","tags":[],"location":{"line":3,"column":1},"keyword":"Scenario Outline","name":"minimalistic","steps":[{"type":"Step","location":{"line":4,"column":5},"keyword":"Given ","text":"the <what>"}],"examples":[{"type":"Examples","location":{"line":6,"column":1},"keyword":"Examples","name":"","tags":[],"tableHeader":{"type":"TableRow","location":{"line":7,"column":3},"cells":[{"type":"TableCell","location":{"line":7,"column":5},"value":"what"}]},"tableBody":[{"type":"TableRow","location":{"line":8,"column":3},"cells":[{"type":"TableCell","location":{"line":8,"column":5},"value":"minimalism"}]}]}]}]}
+,"comments":[]}}
+
+
 {"type":"pickle","uri":"test/testdata/good/scenario_outline_no_newline.feature","pickle":{"language" : "en","name" : "minimalistic","locations":[{"line":8,"column":3},{"line":3,"column":1}],"tags":[],"steps":[{"locations":[{"line":8,"column":3},{"line":4,"column":11}],"arguments" : [],"text":"the minimalism"}]}}
 

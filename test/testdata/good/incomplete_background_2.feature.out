@@ -1,2 +1,6 @@
+{"type":"gherkin-document","uri":"test/testdata/good/incomplete_background_2.feature","document":{"type":"GherkinDocument","feature":{"type":"Feature","tags":[],"location":{"line":1,"column":1},"language":"en","keyword":"Feature","name":"Incomplete backgrounds, Part 2","children":[{"type":"Background","location":{"line":3,"column":3},"keyword":"Background","name":"just a description","description":"    A short description","steps":[]},{"type":"Scenario","tags":[],"location":{"line":6,"column":3},"keyword":"Scenario","name":"still pickles up","steps":[{"type":"Step","location":{"line":7,"column":5},"keyword":"* ","text":"a step"}]}]}
+,"comments":[]}}
+
+
 {"type":"pickle","uri":"test/testdata/good/incomplete_background_2.feature","pickle":{"language" : "en","name" : "still pickles up","locations":[{"line":6,"column":3}],"tags":[],"steps":[{"locations":[{"line":7,"column":7}],"arguments" : [],"text":"a step"}]}}
 

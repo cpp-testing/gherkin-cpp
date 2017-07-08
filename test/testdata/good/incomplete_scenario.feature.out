@@ -1,0 +1,4 @@
+{"type":"gherkin-document","uri":"test/testdata/good/incomplete_scenario.feature","document":{"type":"GherkinDocument","feature":{"type":"Feature","tags":[],"location":{"line":1,"column":1},"language":"en","keyword":"Feature","name":"Incomplete scenarios","children":[{"type":"Background","location":{"line":3,"column":3},"keyword":"Background","name":"Adding a background won't make a pickle","steps":[{"type":"Step","location":{"line":4,"column":5},"keyword":"* ","text":"a step"}]},{"type":"Scenario","tags":[],"location":{"line":6,"column":3},"keyword":"Scenario","name":"no steps","steps":[]}]}
+,"comments":[]}}
+
+

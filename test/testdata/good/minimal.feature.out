@@ -1,2 +1,6 @@
+{"type":"gherkin-document","uri":"test/testdata/good/minimal.feature","document":{"type":"GherkinDocument","feature":{"type":"Feature","tags":[],"location":{"line":1,"column":1},"language":"en","keyword":"Feature","name":"Minimal","children":[{"type":"Scenario","tags":[],"location":{"line":3,"column":3},"keyword":"Scenario","name":"minimalistic","steps":[{"type":"Step","location":{"line":4,"column":5},"keyword":"Given ","text":"the minimalism"}]}]}
+,"comments":[]}}
+
+
 {"type":"pickle","uri":"test/testdata/good/minimal.feature","pickle":{"language" : "en","name" : "minimalistic","locations":[{"line":3,"column":3}],"tags":[],"steps":[{"locations":[{"line":4,"column":11}],"arguments" : [],"text":"the minimalism"}]}}
 

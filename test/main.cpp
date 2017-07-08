@@ -14,11 +14,14 @@ int main(int argc, char** argv) {
     gherkin::compiler compiler{argv[1]};
     const auto gherkin_document = parser.parse(content);
     const auto pickles = compiler.compile(gherkin_document);
+    const auto ast = compiler.ast(gherkin_document);
+
+    std::cout << ast << "\n\n";
 
     for (const auto& pickle : pickles) {
-      std::cout << pickle << std::endl;
+      std::cout << pickle << '\n';
     }
   } catch (const gherkin::parsing_error& err) {
-    std::cout << err.what() << std::endl;
+    std::cout << err.what() << '\n';
   }
 }

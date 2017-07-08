@@ -22,7 +22,7 @@ test:
 	make `find test/testdata -iname "*.feature" | xargs -i% echo %.test`
 
 %.feature.test:
-	@valgrind --leak-check=yes --error-exitcode=-1 ./test.out $*.feature > $*.feature.tmp
+	@valgrind --leak-check=full --error-exitcode=-1 ./test.out $*.feature > $*.feature.tmp
 	diff $*.feature.out $*.feature.tmp
 	@rm -f $*.feature.tmp
 
