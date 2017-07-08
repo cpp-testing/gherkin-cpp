@@ -8,14 +8,14 @@ all: gherkin-c fmem
 	ar x libs/gherkin-c/libs/libgherkin.a
 	ar x libs/fmem/build/libfmem.a
 	ar rvs libgherkin-cpp.a *.o
-	$(CXX) $(CXXFLAGS)-fPIC -shared -o libgherkin-cpp.so *.o
+	$(CXX) $(CXXFLAGS) -fPIC -shared -o libgherkin-cpp.so *.o
 
 gherkin-c:
 	cd libs/gherkin-c && make libs
 
 fmem:
 	@-rm -rf libs/fmem/build
-	cd libs/fmem && mkdir build && cd build && CFLAGS="-fPIC" cmake .. -DBUILD_TESTING=0 && make
+	cd libs/fmem && mkdir build && cd build && LDFLAGS="-fPIC" CFLAGS="-fPIC" cmake .. -DBUILD_TESTING=0 && make
 
 test:
 	$(CXX) $(CXXFLAGS) test/main.cpp libgherkin-cpp.a -o test.out
