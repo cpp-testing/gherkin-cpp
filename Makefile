@@ -1,6 +1,6 @@
 .PHONY: test
 
-CXXFLAGS:=-std=c++11 -I include -I libs/gherkin-c/include -I libs/gherkin-c/src -I libs/fmem/build/gen
+CXXFLAGS:=-std=c++11 -fPIC -I include -I libs/gherkin-c/include -I libs/gherkin-c/src -I libs/fmem/build/gen
 
 all: gherkin-c fmem
 	$(CXX) $(CXXFLAGS) -c src/parser.cpp -o p.o
