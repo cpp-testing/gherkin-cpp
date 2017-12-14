@@ -2,7 +2,9 @@
 
 CXXFLAGS:=-std=c++11 -fPIC -I include -I libs/gherkin-c/include -I libs/gherkin-c/src -I libs/fmem/build/gen
 
-lib: lib-shared lib-static
+lib:
+	@make lib-static
+	@make lib-shared
 
 lib-static: gherkin-c fmem
 	$(CXX) $(CXXFLAGS) -c src/parser.cpp -o p.o
