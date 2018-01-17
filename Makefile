@@ -25,7 +25,7 @@ fmem:
 
 test:
 	$(CXX) $(CXXFLAGS) test/main.cpp libgherkin-cpp.a -o test.out
-	make `find test/testdata -iname "*.feature" | xargs -i% echo %.test`
+	make `find test/testdata -iname "*.feature" | xargs -I% echo %.test`
 
 %.feature.test:
 	@valgrind --leak-check=full --error-exitcode=-1 ./test.out $*.feature > $*.feature.tmp

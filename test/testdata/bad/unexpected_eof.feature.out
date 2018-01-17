@@ -1,2 +1,2 @@
-{"data":"(7:0): unexpected end of file, expected: #TagLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty","media":{"encoding":"utf-8","type":"text/vnd.cucumber.stacktrace+plain"},"source":{"start":{"line":7,"column":0},"uri":"Feature: Unexpected end of file\n\n  Scenario Outline: minimalistic\n    Given the minimalism\n\n    @tag\n"},"type":"attachment"}
+{"data":"(7:0): unexpected end of file, expected: #TagLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty","media":{"encoding":"utf-8","type":"text/x.cucumber.stacktrace+plain"},"source":{"start":{"line":7,"column":0},"uri":"Feature: Unexpected end of file\n\n  Scenario Outline: minimalistic\n    Given the minimalism\n\n    @tag\n"},"type":"attachment"}
 
