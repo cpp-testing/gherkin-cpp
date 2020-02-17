@@ -1,6 +1,6 @@
 [submodule "libs/gherkin-c"]
 	path = libs/gherkin-c
-	url = https://github.com/c-libs/gherkin-c.git
+	url = ../gherkin-c
 [submodule "libs/fmem"]
 	path = libs/fmem
-	url = https://github.com/c-libs/fmem
+	url = ../fmem
