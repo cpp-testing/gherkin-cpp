@@ -1,10 +1,8 @@
 ADD_EXECUTABLE(gherkin-cpp-test main.cpp)
-TARGET_LINK_LIBRARIES(gherkin-cpp-test PUBLIC gherkin-cpp)
-
-ADD_CUSTOM_TARGET(gherkin-cpp-test.run DEPENDS testgherkin-cpp-)
+TARGET_LINK_LIBRARIES(gherkin-cpp-test PRIVATE gherkin-cpp)
 
 FILE(COPY testdata DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
-
+ADD_CUSTOM_TARGET(gherkin-cpp-test.run DEPENDS gherkin-cpp-test)
 ADD_CUSTOM_COMMAND(
         TARGET gherkin-cpp-test.run
         POST_BUILD

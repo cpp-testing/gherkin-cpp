@@ -25,9 +25,9 @@ class parser {
 
  private:
   std::wstring language_;
+  std::unique_ptr<TokenMatcher, void (*)(TokenMatcher *)> token_matcher_;
   std::unique_ptr<Builder, void (*)(Builder *)> builder_;
   std::unique_ptr<Parser, void (*)(Parser *)> parser_;
-  std::unique_ptr<TokenMatcher, void (*)(TokenMatcher *)> token_matcher_;
 };
 
 }  // v1
