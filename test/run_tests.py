@@ -28,7 +28,7 @@ for target in targets:
     #print(target)
     target_result = target+".result"
     outfile = open(target_result, "w")
-    run_result = subprocess.run(["valgrind", "--leak-check=full", "--error-exitcode=-1", "./test", target], stdout=outfile, stderr=subprocess.DEVNULL)
+    run_result = subprocess.run(["valgrind", "--leak-check=full", "--error-exitcode=-1", "./gherkin-cpp-test", target], stdout=outfile, stderr=subprocess.DEVNULL)
     #print(run_result.returncode)
 
 
@@ -58,7 +58,7 @@ for target in targets:
 if overal_result == True:
     os._exit(0)
 else:
-    print("Compare the *.feature.out to the *.feature.result for each failed test")
+    print("Compare the *.feature.out to the *.feature.result for each failed test (in the build folder, since we are working on a copy)")
     print("----------------------------------------------------------------------")
     print("At least one test failed, so this script exits with an error (exit code 1)")
     os._exit(1)
