@@ -4,7 +4,11 @@
 #include <iostream>
 
 int main(int argc, char** argv) {
-  assert(argc == 2);
+  if (argc != 2) {
+    std::cerr << "You need to supply a feature file like: ./gherkin-cpp-test testdata/good/escaped_pipes.feature.out" << std::endl;
+    std::cerr << "Or better, run the 'make gherkin-cpp-test.run" << std::endl;
+    exit(1);
+  }
   std::ifstream file{argv[1]};
   assert(file.good());
   std::wstring content{(std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>()};
