@@ -17,6 +17,7 @@ ADD_LIBRARY(gherkin-cpp::gherkin-cpp ALIAS gherkin-cpp)
 TARGET_INCLUDE_DIRECTORIES(gherkin-cpp
         PUBLIC ${PROJECT_SOURCE_DIR}/include
 )
+
 ADD_SUBDIRECTORY(libs/fmem)
 TARGET_LINK_LIBRARIES(gherkin-cpp PRIVATE fmem)
 
