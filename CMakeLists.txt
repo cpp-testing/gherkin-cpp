@@ -11,6 +11,17 @@ file(GLOB_RECURSE GHERKIN_H_SRS
         include/*.hpp
 )
 
+if(MSVC AND NOT BUILD_SHARED_LIBS)
+    add_compile_options(/EHsc)
+    # See https://gitlab.kitware.com/cmake/cmake/-/issues/18390
+    add_compile_options(
+            $<$<CONFIG:>:/MT>
+            $<$<CONFIG:Debug>:/MTd>
+            $<$<CONFIG:Release>:/MT>
+    )
+    add_compile_definitions(GHERKIN_C_EXPORTS)
+endif(MSVC AND NOT BUILD_SHARED_LIBS)
+
 ADD_LIBRARY(gherkin-cpp ${GHERKIN_CPP_SRS})
 ADD_LIBRARY(gherkin-cpp::gherkin-cpp ALIAS gherkin-cpp)
 
