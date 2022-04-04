@@ -1,6 +1,8 @@
 [submodule "libs/gherkin-c"]
 	path = libs/gherkin-c
 	url = ../gherkin-c
+	shallow = true
 [submodule "libs/fmem"]
 	path = libs/fmem
 	url = ../fmem
+	shallow = true
