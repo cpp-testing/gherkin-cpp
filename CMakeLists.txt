@@ -1,5 +1,5 @@
 project(gherkin-cpp)
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.5)
 
 option(BUILD_SHARED_LIBS "Build shared library." OFF)
 
